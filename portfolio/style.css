@@ -1,0 +1,50 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 9px;
+    background-image: linear-gradient(90deg, #02dde0 0%, #FC00FF 100%);
+    background-position: center;
+}
+
+
+img {
+    border-radius: 50%;
+
+    transition: transform .2s ease;
+}
+
+img:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.page-wrapper,
+h1,
+h2,
+ul,
+li,
+.aboutme,
+h4 {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 20px;
+    border: none;
+    width: auto;
+    background-image: linear-gradient(90deg, #00c0c4 0%, #d100d4 100%);
+    text-align: center;
+}
+
+.aboutme {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    border-radius: 9px;
+    text-decoration: none;
+    padding: 4px
+}
+
+ul {
+    list-style: none;
+}
