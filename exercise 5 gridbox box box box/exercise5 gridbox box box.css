@@ -6,9 +6,9 @@
     padding: 10px;    
 }
 
-/* #grid-layout{
-    colord: black;
-} */
+ #grid-layout{
+    color: black;
+}
 
 .advance-grid {
     grid-template-columns: auto auto auto auto auto;

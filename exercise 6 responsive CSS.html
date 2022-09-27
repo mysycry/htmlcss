@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Income</title>
+</head>
+
+<style>
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 60px;
+        align-items: flex-start;
+        align-content: flex-start;
+        background-color: grey;
+        padding: 1.5rem;
+
+        
+
+}
+    li {
+        list-style: none;
+        
+        
+}
+    li a{
+        text-decoration: none;
+        color: white;
+        padding: 1.5rem;
+
+    }
+    li a:hover{
+        background-color: green;
+        color: yellow;
+        padding: 1.5rem;
+        
+    }
+    
+
+
+    th,
+    tr,
+    td {
+        padding: 9px;
+        color: greenyellow;
+        background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d079e1f-386b-4bd0-84fc-cce9913fbc0c/ddm15fz-6822ceeb-84e9-4ade-b749-7bb5b3e0bc87.jpg/v1/fill/w_800,h_1235,q_75,strp/nazgul_6___lotr___by_anatofinnstark_ddm15fz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIzNSIsInBhdGgiOiJcL2ZcLzNkMDc5ZTFmLTM4NmItNGJkMC04NGZjLWNjZTk5MTNmYmMwY1wvZGRtMTVmei02ODIyY2VlYi04NGU5LTRhZGUtYjc0OS03YmI1YjNlMGJjODcuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GBhbN22izr4PZpbHj2AWvVjidZVs9Ku-dEMchnyveUk);
+    }
+
+    th {
+        height: 40px;
+    }
+
+    .rightbot {
+        border-bottom-right-radius: 15px;
+    }
+
+    .grandTotal {
+        border-bottom-left-radius: 15px;
+    }
+
+    .lefttop {
+        border-top-left-radius: 15px;
+    }
+
+    .righttop {
+        border-top-right-radius: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+  ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 60px;
+        align-items: flex-start;
+        align-content: center;
+        background-color: grey;
+        padding: 1.5rem;
+  }
+}
+</style>
+
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <th class="lefttop">Businesses</th>
+            <th>Revenue</th>
+            <th>Expenses</th>
+            <th class="righttop">Profits</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Duck Farm</td>
+                <td>200,000</td>
+                <td>49,000</td>
+                <td>151,000</td>
+            </tr>
+            <tr>
+                <td>Real Estate</td>
+                <td>850,000</td>
+                <td>74,800</td>
+                <td>775,200</td>
+            </tr>
+            <tr>
+                <td>Lazada Shop</td>
+                <td>99,000</td>
+                <td>31,000</td>
+                <td>68,000</td>
+            </tr>
+            <tr>
+                <td>Youtube Channel</td>
+                <td>340,000</td>
+                <td>32,000</td>
+                <td>308,000</td>
+            <tr>
+                <td colspan="3" style="text-align: right;">Sub Total</td>
+                <td>1,302,000</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right;">VAT</td>
+                <td>195,000</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right;" class="grandTotal">Grand Total</td>
+                <td class="rightbot">1,107,200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
