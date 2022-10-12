@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exe 1</title>
+</head>
+<body>
+    <div style="margin: auto; width: 50%; padding: 100px; text-align: center;">
+        <div style="padding-top: 30px;">
+            <p>Enter the Number: <input id="number"><button onclick="checker()">Check</button></p>
+    
+            <p id="numberchecker" style="display:none;">It is an <span id="show"></span> Number</p>
+        </div>
+    
+        <div style="padding-top: 30px;">
+            <p>Enter the Character: <input id="text" maxlength="1"><button onclick="abchecker()">Check</button></p>
+    
+            <p id="vowelchecker" style="display:none;">It is <span id="showletter"></span></p>
+        </div>
+    </div>
+        
+
+
+
+<script>
+    function checker()
+{
+  num = parseInt(document.getElementById("number").value);
+  if(num)
+  {
+    temp = document.getElementById("numberchecker");
+    temp.style.display = "block";
+    if(num%2==0)
+      document.getElementById("show").innerHTML = "Even";
+    else
+      document.getElementById("show").innerHTML = "Odd";
+  }
+};
+
+    var ch
+    function abchecker()
+    {
+    ch = document.getElementById("text").value;
+    if(ch)
+    {
+        temp = document.getElementById("vowelchecker");
+        temp.style.display = "block";
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+        {
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            document.getElementById("showletter").innerHTML = "a Vowel";
+        else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+            document.getElementById("showletter").innerHTML = "a Vowel";
+        else
+            document.getElementById("showletter").innerHTML = "a Consonant";
+        }else
+            document.getElementById("showletter").innerHTML = "neither Vowel nor Consonant";
+    }
+    };
+</script>
+
+
+</body>
+</html>
